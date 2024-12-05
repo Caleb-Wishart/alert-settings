@@ -1,0 +1,5 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 2024.12.04
+  Features:
+    - Game Settings to enable/disable alerts (internally calls the relevant console command)
