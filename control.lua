@@ -95,8 +95,6 @@ end
 
 script.on_init(update_settings_storage)
 
-script.on_load(update_settings_storage)
-
 script.on_event(defines.events.on_player_created, function(event)
     local player = game.get_player(event.player_index)
     if player == nil then
