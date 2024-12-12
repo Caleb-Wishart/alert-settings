@@ -1,12 +1,12 @@
 {
   "name": "alert-settings",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "title": "Alert Settings",
   "author": "AckEmma",
   "factorio_version": "2.0",
   "description": "Adds easy to use settings for alert visibility. Helps if you can't remember the command to change them.",
   "dependencies": ["base"],
   "package": {
-    "ignore": ["resources/*"]
+    "ignore": ["resources/*", "stylua.toml"]
   }
 }
