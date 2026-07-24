@@ -1,9 +1,9 @@
 {
   "name": "alert-settings",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "title": "Alert Settings",
   "author": "AckEmma",
-  "factorio_version": "2.0",
+  "factorio_version": "2.1",
   "description": "Adds easy to use settings for alert visibility. Helps if you can't remember the command to change them.",
   "dependencies": [
     "base >= 2.1.7"

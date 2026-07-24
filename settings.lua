@@ -1,3 +1,4 @@
+-- Yes, visibility is spelled wrong. I know. Can't be bothered to add a migration now.
 data:extend({
     {
         type = "string-setting",
@@ -5,7 +6,7 @@ data:extend({
         order = "aa",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
@@ -13,7 +14,7 @@ data:extend({
         order = "ab",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
@@ -21,7 +22,7 @@ data:extend({
         order = "ac",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
@@ -29,110 +30,118 @@ data:extend({
         order = "ad",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
+    },
+    {
+        type = "string-setting",
+        name = "alert-visibilty-fluid-mixing",
+        order = "ae",
+        setting_type = "runtime-per-user",
+        default_value = "Enabled",
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-no-material-for-construction",
-        order = "ae",
+        order = "af",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-no-platform-storage",
-        order = "af",
+        order = "ag",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-no-roboport-storage",
-        order = "ag",
+        order = "ah",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-no-storage",
-        order = "ah",
+        order = "ai",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-not-enough-construction-robots",
-        order = "ai",
+        order = "aj",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-not-enough-repair-packs",
-        order = "aj",
+        order = "ak",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-pipeline-overextended",
-        order = "ak",
+        order = "al",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-platform-tile-building-blocked",
-        order = "al",
+        order = "am",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-train-no-path",
-        order = "am",
+        order = "an",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-train-out-of-fuel",
-        order = "an",
+        order = "ao",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-turret-fire",
-        order = "ao",
+        order = "ap",
         setting_type = "runtime-per-user",
         default_value = "Disabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-turret-out-of-ammo",
-        order = "ap",
+        order = "aq",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
     },
     {
         type = "string-setting",
         name = "alert-visibilty-unclaimed-cargo",
-        order = "aq",
+        order = "ar",
         setting_type = "runtime-per-user",
         default_value = "Enabled",
-        allowed_values = { "Enabled", "Muted", "Disabled" },
-    },
+        allowed_values = { "Enabled", "Muted", "Disabled" }
+    }
 })

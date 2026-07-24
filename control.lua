@@ -4,6 +4,7 @@ local function get_alert_setting(alert_type)
         [defines.alert_type.custom] = "alert-visibilty-custom",
         [defines.alert_type.entity_destroyed] = "alert-visibilty-entity-destroyed",
         [defines.alert_type.entity_under_attack] = "alert-visibilty-entity-under-attack",
+        [defines.alert_type.fluid_mixing] = "alert-visibilty-fluid-mixing",
         [defines.alert_type.no_material_for_construction] = "alert-visibilty-no-material-for-construction",
         [defines.alert_type.no_platform_storage] = "alert-visibilty-no-platform-storage",
         [defines.alert_type.no_roboport_storage] = "alert-visibilty-no-roboport-storage",
@@ -16,7 +17,7 @@ local function get_alert_setting(alert_type)
         [defines.alert_type.train_out_of_fuel] = "alert-visibilty-train-out-of-fuel",
         [defines.alert_type.turret_fire] = "alert-visibilty-turret-fire",
         [defines.alert_type.turret_out_of_ammo] = "alert-visibilty-turret-out-of-ammo",
-        [defines.alert_type.unclaimed_cargo] = "alert-visibilty-unclaimed-cargo",
+        [defines.alert_type.unclaimed_cargo] = "alert-visibilty-unclaimed-cargo"
     }
     return alert_settings[alert_type]
 end
@@ -32,6 +33,8 @@ local function get_alert_type(setting)
         ["entity_destroyed"] = defines.alert_type.entity_destroyed,
         ["alert-visibilty-entity-under-attack"] = defines.alert_type.entity_under_attack,
         ["entity_under_attack"] = defines.alert_type.entity_under_attack,
+        ["alert-visibilty-fluid-mixing"] = defines.alert_type.fluid_mixing,
+        ["fluid_mixing"] = defines.alert_type.fluid_mixing,
         ["alert-visibilty-no-material-for-construction"] = defines.alert_type.no_material_for_construction,
         ["no_material_for_construction"] = defines.alert_type.no_material_for_construction,
         ["alert-visibilty-no-platform-storage"] = defines.alert_type.no_platform_storage,
@@ -57,7 +60,7 @@ local function get_alert_type(setting)
         ["alert-visibilty-turret-out-of-ammo"] = defines.alert_type.turret_out_of_ammo,
         ["turret_out_of_ammo"] = defines.alert_type.turret_out_of_ammo,
         ["alert-visibilty-unclaimed-cargo"] = defines.alert_type.unclaimed_cargo,
-        ["unclaimed_cargo"] = defines.alert_type.unclaimed_cargo,
+        ["unclaimed_cargo"] = defines.alert_type.unclaimed_cargo
     }
     return alert_types[setting]
 end
@@ -95,7 +98,7 @@ end
 
 script.on_init(update_settings_storage)
 
-script.on_event(defines.events.on_player_created, function(event)
+script.on_event(defines.events.on_player_created, function (event)
     local player = game.get_player(event.player_index)
     if player == nil then
         return
@@ -119,7 +122,7 @@ local function set_alert_state(player, setting_name, state)
 end
 
 -- Update global settings storage on settings change
-script.on_event(defines.events.on_runtime_mod_setting_changed, function(event)
+script.on_event(defines.events.on_runtime_mod_setting_changed, function (event)
     if event.setting_type ~= "runtime-per-user" then
         return
     end
