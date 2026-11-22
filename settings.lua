@@ -34,6 +34,14 @@ data:extend({
     },
     {
         type = "string-setting",
+        name = "alert-visibilty-expansion-base-built",
+        order = "ada",
+        setting_type = "runtime-per-user",
+        default_value = "Enabled",
+        allowed_values = { "Enabled", "Muted", "Disabled" }
+    },
+    {
+        type = "string-setting",
         name = "alert-visibilty-fluid-mixing",
         order = "ae",
         setting_type = "runtime-per-user",
